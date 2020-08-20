@@ -1,10 +1,16 @@
 .project-collection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  top: -10rem;
   padding: 1rem;
+  background: #fff;
+  margin: 0 2rem;
+  border-radius: 0.5rem;
 }
 
 .project-container {
+  height: 15rem;
   padding: 1rem;
   border: 1px solid black;
   margin: 1rem;

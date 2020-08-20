@@ -4,7 +4,7 @@ import "../stylesheets/blog.css";
 
 const Blog = (props) => {
   return (
-    <div>
+    <div className="main">
       <div className="title-box">
         <h1 className="main-heading">A Long Strange Journey</h1>
         <h2 className="sub-heading">

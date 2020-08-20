@@ -1,19 +1,21 @@
 .title-box {
-  border: 1px solid #000;
 }
 
 .main-heading {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
 }
 
 .sub-heading {
+  text-align: center;
   font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
 .blog-box {
   display: flex;
   flex-direction: column;
-  margin: 2rem 5rem;
 }
 
 .blog-card {
