@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Router } from "@reach/router";
 import Navbar from "./navbar";
 import Blog from "./blog";
+import Home from "./home";
+import Contact from "./contact";
+import Projects from "./projects";
+import BlogPost from "./blog-post";
 import "../stylesheets/app.css";
 
 function App() {
@@ -22,7 +27,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Blog isLoading={isLoading} data={data} />
+      <Router>
+        <Home path="/" />
+        <Projects path="/projects" />
+        <Contact path="/contact" />
+        <Blog isLoading={isLoading} data={data} path="/blog" />
+        <BlogPost path="/blog/:postId" />
+      </Router>
     </div>
   );
 }

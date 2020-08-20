@@ -1,0 +1,11 @@
+.project-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.project-container {
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+}

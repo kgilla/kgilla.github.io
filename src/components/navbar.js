@@ -1,29 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "@reach/router";
+import "../stylesheets/navbar.css";
 
 function Navbar() {
-  const [value] = useState("yes");
   return (
-    <nav>
-      <div>
-        <a href="/" className="nav-link">
-          Home
-        </a>
-      </div>
-      <div>
-        <a href="/projects" className="nav-link">
-          {value}
-        </a>
-      </div>
-      <div>
-        <a href="/contact" className="nav-link">
-          Contact
-        </a>
-      </div>
-      <div>
-        <a href="/blog" className="nav-link">
-          Blog
-        </a>
-      </div>
+    <nav className="main-nav">
+      <Link className="nav-link" to="/">
+        Home
+      </Link>{" "}
+      <Link className="nav-link" to="/projects">
+        Projects
+      </Link>
+      <Link className="nav-link" to="/contact">
+        Contact
+      </Link>
+      <Link className="nav-link" to="/blog">
+        Blog
+      </Link>
     </nav>
   );
 }
