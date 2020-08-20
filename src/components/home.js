@@ -36,7 +36,27 @@ function Home() {
           and perpetually working on my coding chops,one problem at a time.
         </p>
       </div>
-      <div className="skills-section"></div>
+      <div className="skills-section">
+        <h2 className="sub-heading">What I Bring To The Table</h2>
+        <div className="skills-container">
+          <div className="front-end-skills">
+            <h3 className="skills-heading">Front End</h3>
+            <p>
+              The ability to conceptualize an idea, iterate on it in real time,
+              and ultimately see it fully realized into a functional and
+              beautiful interface.
+            </p>
+          </div>
+          <div className="back-end-skills">
+            <h3 className="skills-heading">Back End</h3>
+            <p>
+              Solving problems of all sizes, managing and maintaining data, and
+              helping the server side functions operate smoothly and more
+              effeciently, are just a few of the penis{" "}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
