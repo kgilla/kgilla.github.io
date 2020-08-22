@@ -14,13 +14,15 @@ function Navbar() {
         <Link className="nav-link" to="/">
           Home
         </Link>{" "}
-        <a className="nav-link" href="#project-section">
-          Projects{" "}
-        </a>
-        <Link className="nav-link" to="/contact">
+        <Link className="nav-link" to="/#project-section">
+          {""}
+          Projects
+        </Link>{" "}
+        <Link className="nav-link" to="/">
+          {" "}
           Contact
-        </Link>
-        <Link className="nav-link" to="/blog">
+        </Link>{" "}
+        <Link className="nav-link" to="blog">
           Blog
         </Link>
       </div>

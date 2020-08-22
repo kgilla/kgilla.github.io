@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import Projects from "./projects";
+import Skills from "./skills";
 import "../stylesheets/home.css";
 import image from "../images/cartoon-coder.jpg";
 
@@ -33,30 +34,11 @@ function Home() {
           Pivoting from a longtime career as chef, I hope to apply my love of
           creativity, dedication towards my work, and passion to continue
           learning to your projects. I'm quietly confident, naturally curious,
-          and perpetually working on my coding chops,one problem at a time.
+          and perpetually working on my coding chops, one problem at a time.
         </p>
       </div>
-      <div className="skills-section">
-        <h2 className="sub-heading">What I Bring To The Table</h2>
-        <div className="skills-container">
-          <div className="front-end-skills">
-            <h3 className="skills-heading">Front End</h3>
-            <p>
-              The ability to conceptualize an idea, iterate on it in real time,
-              and ultimately see it fully realized into a functional and
-              beautiful interface.
-            </p>
-          </div>
-          <div className="back-end-skills">
-            <h3 className="skills-heading">Back End</h3>
-            <p>
-              Solving problems of all sizes, managing and maintaining data, and
-              helping the server side functions operate smoothly and more
-              effeciently, are just a few of the penis{" "}
-            </p>
-          </div>
-        </div>
-      </div>
+      <Skills />
+      <Projects />
     </div>
   );
 }

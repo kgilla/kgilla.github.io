@@ -4,7 +4,7 @@ import "../stylesheets/projects.css";
 function Projects() {
   return (
     <div id="project-section">
-      <h1>Projects!</h1>
+      <h1 className="main-heading">My Most Recent Work</h1>
       <div className="project-collection">
         <div className="project-container">1</div>
         <div className="project-container">2</div>

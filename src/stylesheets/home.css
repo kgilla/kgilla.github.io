@@ -53,27 +53,3 @@ img {
   font-size: 1.1rem;
   text-align: center;
 }
-
-.skills-container {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1rem 10rem;
-}
-
-.front-end-skills {
-  width: 50%;
-  padding: 1rem;
-}
-
-.back-end-skills {
-  width: 50%;
-
-  padding: 1rem;
-}
-
-.skills-heading {
-  font-size: 1.4rem;
-  font-weight: bold;
-  padding: 1rem;
-  text-align: center;
-}

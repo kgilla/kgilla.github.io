@@ -29,10 +29,9 @@ function App() {
       <Navbar />
       <Router>
         <Home path="/" />
-        <Projects path="/projects" />
-        <Contact path="/contact" />
-        <Blog isLoading={isLoading} data={data} path="/blog" />
-        <BlogPost path="/blog/:postId" />
+        <Projects path="/#project-section" />
+        <Blog isLoading={isLoading} data={data} path="blog" />
+        <BlogPost path="blog/:postId" />
       </Router>
     </div>
   );
