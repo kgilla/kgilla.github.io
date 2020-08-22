@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "@reach/router";
-import Projects from "./projects";
 import Skills from "./skills";
+import Footer from "./footer";
+import Projects from "./projects";
 import "../stylesheets/home.css";
 import image from "../images/cartoon-coder.jpg";
 
@@ -21,9 +21,9 @@ function Home() {
         </div>
         <h2 className="sub-heading">
           Just show me your work already!{" "}
-          <Link className="link-button" to="/projects">
+          <a className="link-button" href="#project-section">
             My Work
-          </Link>
+          </a>
         </h2>
       </div>
       <div className="colored-box">
@@ -39,6 +39,7 @@ function Home() {
       </div>
       <Skills />
       <Projects />
+      <Footer />
     </div>
   );
 }

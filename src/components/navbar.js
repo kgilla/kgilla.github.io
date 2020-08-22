@@ -14,14 +14,12 @@ function Navbar() {
         <Link className="nav-link" to="/">
           Home
         </Link>{" "}
-        <Link className="nav-link" to="/#project-section">
-          {""}
+        <Link className="nav-link" to="projects">
           Projects
-        </Link>{" "}
-        <Link className="nav-link" to="/">
-          {" "}
+        </Link>
+        <Link className="nav-link" to="contact">
           Contact
-        </Link>{" "}
+        </Link>
         <Link className="nav-link" to="blog">
           Blog
         </Link>
