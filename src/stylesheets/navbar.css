@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom: 0.1rem solid #eee;
 }
 
@@ -11,7 +11,7 @@
   font-weight: bold;
   color: #1976d2;
   border: 0.2rem solid #1976d2;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   border-radius: 50%;
   text-decoration: none;
 }

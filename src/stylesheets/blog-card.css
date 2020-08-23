@@ -1,0 +1,52 @@
+/* blog-card */
+
+.blog-card {
+  display: flex;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.blog-card-image-box {
+  width: 25%;
+  height: auto;
+  background-image: url("../images/code-on-laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 2rem;
+}
+
+.blog-card-main {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.blog-card-details-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.blog-detail-date {
+  margin-right: 1rem;
+}
+
+.blog-detail-comment-count {
+  margin-right: 1rem;
+}
+
+.blog-detail-catagory {
+}
+
+.blog-card-content {
+  font-size: 0.9rem;
+}

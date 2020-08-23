@@ -1,29 +1,55 @@
 import React from "react";
-import { Link } from "@reach/router";
+import BlogCard from "./blog-card";
+import BlogPost from "./blog-post";
+import { Router } from "@reach/router";
 import "../stylesheets/blog.css";
+import image from "../images/cartoon-coder.jpg";
 
 const Blog = (props) => {
   return (
-    <div className="main">
+    <div className="blog-section">
       <div className="title-box">
-        <h1 className="main-heading">A Long Strange Journey</h1>
+        <h1 className="main-heading">Hello World To Hired</h1>
         <h2 className="sub-heading">
-          "Because my life is dope and I do dope things" Kanye West
+          A collection of experiences on the road to becoming a front-end
+          developer
         </h2>
       </div>
-      <div className="blog-box">
+      <div className="blog-main">
         {props.isLoading ? (
           <p>Loading...</p>
         ) : (
-          props.data.map((post) => (
-            <div className="blog-card" key={post._id}>
-              <h3>{post.title}</h3>
-              <h4>Posted on {post.date}</h4>
-              <p>{post.content}</p>
-              <Link to={`/blog/${post._id}`}>click me</Link>
-            </div>
-          ))
+          <div className="blog-content">
+            <h2>Blog Posts</h2>
+            {props.data.map((post) => (
+              <BlogCard
+                post={post}
+                author={post.author}
+                comments={post.comments}
+                key={post._id}
+              />
+            ))}
+          </div>
         )}
+
+        <div className="blog-side-section">
+          <div className="side-bio-section">
+            <h2 className="side-bio-heading">About Me</h2>
+            <img
+              className="side-bio-image"
+              src={image}
+              alt="cartoon of coder"
+            ></img>
+            <p className="side-bio-content">
+              Hey there my name is Kenneth and I am an aspiring front-end
+              developer. Aside from coding, I enjoy cooking and all things food,
+              playing guitar, indoor gardening, cycling, and playing video
+              games.
+            </p>
+          </div>
+          <div className="side-links-section">Links</div>
+          <div className="side-categories-section"> categories</div>
+        </div>
       </div>
     </div>
   );
