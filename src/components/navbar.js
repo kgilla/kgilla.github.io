@@ -11,17 +11,18 @@ function Navbar() {
         </Link>{" "}
       </div>
       <div className="nav-right-links">
-        <Link className="nav-link" to="/">
+        {/* <Link className="nav-link" to="/">
           Home
-        </Link>{" "}
+        </Link>{" "} */}
         <Link className="nav-link" to="projects">
           Projects
         </Link>
-        <Link className="nav-link" to="contact">
-          Contact
-        </Link>
+
         <Link className="nav-link" to="blog">
           Blog
+        </Link>
+        <Link className="nav-link" to="contact">
+          Contact
         </Link>
       </div>
     </nav>

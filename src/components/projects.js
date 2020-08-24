@@ -1,17 +1,19 @@
 import React from "react";
+import Project from "./project";
 import "../stylesheets/projects.css";
+import image from "../images/lion.jpg";
 
 function Projects() {
   return (
     <div id="project-section">
       <h1 className="main-heading">My Most Recent Work</h1>
       <div className="project-collection">
-        <div className="project-container">1</div>
-        <div className="project-container">2</div>
-        <div className="project-container">3</div>
-        <div className="project-container">4</div>
-        <div className="project-container">5</div>
-        <div className="project-container">6</div>
+        <Project image={image} altImage="lion" />
+        <Project image={image} altImage="lion" />
+        <Project image={image} altImage="lion" />
+        <Project image={image} altImage="lion" />
+        <Project image={image} altImage="lion" />
+        <Project image={image} altImage="lion" />
       </div>
     </div>
   );

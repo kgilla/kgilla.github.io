@@ -1,49 +1,52 @@
 /* skills */
 
 .skills-section {
+  width: 90%;
+  max-width: 1400px;
   position: relative;
   top: -8rem;
-  margin: 0 8rem;
+  margin: 0 auto;
   margin-bottom: -4rem;
-  border: 1px solid #ddd;
+  border: 0.1rem solid #eee;
   border-radius: 0.5rem;
   background: #fff;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .skills-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
 }
 
 .front-end-skills,
 .back-end-skills {
   width: 50%;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.back-end-skills {
+  border-left: 0.1rem solid #eee;
 }
 
 .skills-heading {
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: bolder;
   padding: 0.5rem;
   text-align: center;
-  border-bottom: 0.1rem solid #1976d2;
 }
 
 .skills-sub-heading {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 0.5rem;
   text-align: center;
-  border-bottom: 0.1rem solid #1976d2;
+  color: #1976d2;
 }
 
 .skills-paragraph {
+  height: 6rem;
   padding: 0.5rem;
+  line-height: 2;
+  color: #333;
 }
 
 .skills-list {
@@ -54,4 +57,5 @@
 
 .skills-list-item {
   font-size: 1rem;
+  color: #333;
 }

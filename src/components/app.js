@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="main">
       <Navbar />
       <Router>
         <Home path="/" />

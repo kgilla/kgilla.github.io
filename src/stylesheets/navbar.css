@@ -1,9 +1,10 @@
 .main-nav {
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  border-bottom: 0.1rem solid #eee;
+  padding: 0.5rem 4rem;
+  margin: 0 auto;
 }
 
 .nav-icon {
@@ -14,6 +15,12 @@
   font-size: 1.5rem;
   border-radius: 50%;
   text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-icon:hover {
+  background: #1976d2;
+  color: #fff;
 }
 
 .nav-right-links {
@@ -25,10 +32,11 @@
   font-size: 1.2rem;
   color: #000;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+  transition: color 0.2s;
 }
 
 .nav-link:hover {
   color: #1976d2;
-  text-decoration: underline;
 }

@@ -1,3 +1,7 @@
+.main-hero {
+  padding: 3rem;
+}
+
 .image-box {
   display: flex;
   justify-content: center;
@@ -26,25 +30,30 @@ img {
 }
 
 .colored-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   background: #1976d2;
   padding: 5rem 10rem;
   padding-bottom: 15rem;
-  color: #fff;
 }
 
-.colored-box .sub-heading {
-  grid-area: 1/1/2/6;
+.colored-box-text-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.white-sub-heading {
   padding: 2rem;
   font-size: 1.8rem;
   font-weight: bold;
+  color: #fff;
 }
 
 .white-paragraph {
-  grid-area: 2/2/3/5;
   line-height: 2;
   font-size: 1.1rem;
   text-align: center;
+  color: #fff;
 }

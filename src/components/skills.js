@@ -4,10 +4,12 @@ import "../stylesheets/skills.css";
 const Skills = () => {
   return (
     <div className="skills-section">
-      <h1 className="main-heading">What I Bring To The Table</h1>
+      {/* <h1 className="main-heading skills-main-heading">
+        What I Bring To The Table
+      </h1> */}
       <div className="skills-container">
         <div className="front-end-skills">
-          <h3 className="skills-heading">Front End</h3>
+          <h3 className="skills-heading">Front-end Developer</h3>
           <p className="skills-paragraph">
             The ability to conceptualize an idea, iterate on it in real time,
             and ultimately see it fully realized into a functional and beautiful
@@ -28,7 +30,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="back-end-skills">
-          <h3 className="skills-heading">Back End</h3>
+          <h3 className="skills-heading">Back-end Developer</h3>
           <p className="skills-paragraph">
             Solving problems of all sizes, managing and maintaining data, and
             helping the server side functions operate smoothly and more
