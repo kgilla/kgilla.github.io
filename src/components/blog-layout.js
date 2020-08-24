@@ -1,11 +1,8 @@
 import React from "react";
-import BlogCard from "./blog-card";
-import BlogPost from "./blog-post";
-import { Router } from "@reach/router";
-import "../stylesheets/blog.css";
+import "../stylesheets/blog-layout.css";
 import image from "../images/cartoon-coder.jpg";
 
-const Blog = (props) => {
+const BlogLayout = (props) => {
   return (
     <div className="blog-section">
       <div className="title-box">
@@ -16,22 +13,7 @@ const Blog = (props) => {
         </h2>
       </div>
       <div className="blog-main">
-        {props.isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <div className="blog-content">
-            <h2>Blog Posts</h2>
-            {props.data.map((post) => (
-              <BlogCard
-                post={post}
-                author={post.author}
-                comments={post.comments}
-                key={post._id}
-              />
-            ))}
-          </div>
-        )}
-
+        <div className="blog-content">{props.children}</div>
         <div className="blog-side-section">
           <div className="side-bio-section">
             <h2 className="side-bio-heading">About Me</h2>
@@ -55,4 +37,4 @@ const Blog = (props) => {
   );
 };
 
-export default Blog;
+export default BlogLayout;
