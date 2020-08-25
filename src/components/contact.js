@@ -9,20 +9,20 @@ function Contact() {
       <form className="contact-form">
         <div className="contact-text-inputs">
           <div className="form-section">
-            <label className="contact-label" for="name">
+            <label className="contact-label" htmlFor="name">
               Name
             </label>
             <input className="text-input" type="text" name="name" />
           </div>
           <div className="form-section">
-            <label className="contact-label" for="email">
+            <label className="contact-label" htmlFor="email">
               Email
             </label>
             <input className="text-input" type="text" />
           </div>
         </div>
         <div className="form-section">
-          <label className="contact-label" for="message">
+          <label className="contact-label" htmlFor="message">
             Message
           </label>
           <textarea className="contact-textarea"></textarea>

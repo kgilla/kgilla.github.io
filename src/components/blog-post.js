@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import BlogLayout from "./blog-layout";
+import CommentForm from "./comment-form";
+import Comments from "./comments";
+import "../stylesheets/blog-post.css";
 
 const BlogPost = (props) => {
   let [post, setPost] = useState({});
@@ -15,7 +18,7 @@ const BlogPost = (props) => {
       const data = await response.json();
       setPost(data.post);
       setAuthor(data.author);
-      setComments(data.comments);
+      setComments(data.post.comments);
       setIsLoading(false);
     };
     fetchData();
@@ -27,27 +30,29 @@ const BlogPost = (props) => {
         {isLoading ? (
           <p>Loading...</p>
         ) : (
-          <article>
-            <header>
-              <h1>{post.title}</h1>
-              <h2>By {author.fullname}</h2>
-              <div className="blog-card-details-box">
-                <h4 className="blog-detail-date">Posted on {post.date}</h4>
-                <h4 className="blog-detail-comment-count">0 Comments</h4>
-                <h4 className="blog-detail-catagory">Catagory</h4>
-              </div>
-            </header>
-            <main>
-              <p>{post.content}</p>
-            </main>
-            <footer>
-              {comments ? (
-                comments.map((comment) => <div>comment</div>)
-              ) : (
-                <div>Nothing here</div>
-              )}
-            </footer>
-          </article>
+          <div className="blog-post-container">
+            <article className="blog-post">
+              <header className="blog-post-header">
+                <h1 className="blog-post-title">{post.title}</h1>
+                <h2 className="blog-post-author">By {author.fullname}</h2>
+                <div className="blog-post-details-box">
+                  <h4 className="blog-detail-date">Posted on {post.date}</h4>
+                  <h4 className="blog-detail-comment-count">
+                    {comments ? comments.length : "0"} Comments
+                  </h4>
+                  <h4 className="blog-detail-catagory">Catagory</h4>
+                </div>
+              </header>
+              <main className="blog-post-content-container">
+                <p className="blog-post-content">{post.content}</p>
+              </main>
+              <footer></footer>
+            </article>
+            <div className="comments-section">
+              <Comments comments={comments} />
+              <CommentForm postId={props.postId} />
+            </div>
+          </div>
         )}
       </div>
     </BlogLayout>

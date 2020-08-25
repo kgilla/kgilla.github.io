@@ -1,0 +1,38 @@
+.blog-post {
+  padding: 2rem;
+}
+
+.blog-post-header {
+}
+
+.blog-post-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.blog-post-author {
+  font-size: 1.2rem;
+}
+
+.blog-post-details-box {
+  display: flex;
+  padding-bottom: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+.blog-detail-date {
+  padding-right: 1rem;
+}
+
+.blog-detail-comment-count {
+  padding-right: 1rem;
+}
+
+.blog-detail-catagory {
+  padding-right: 1rem;
+}
+
+.comments-section {
+  padding: 2rem;
+}

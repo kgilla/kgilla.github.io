@@ -4,7 +4,7 @@ import Navbar from "./navbar";
 import BlogIndex from "./blog-index";
 import Home from "./home";
 import Contact from "./contact";
-import Projects from "./projects";
+import ProjectIndex from "./project-index";
 import BlogPost from "./blog-post";
 import "../stylesheets/app.css";
 
@@ -29,7 +29,7 @@ function App() {
       <Navbar />
       <Router>
         <Home path="/" />
-        <Projects path="/projects" />
+        <ProjectIndex path="/projects" />
         <Contact path="contact" />
         <BlogIndex isLoading={isLoading} data={data} path="blog" />
         <BlogPost path="blog/:postId" />

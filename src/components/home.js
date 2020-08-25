@@ -1,7 +1,7 @@
 import React from "react";
 import Skills from "./skills";
 import Footer from "./footer";
-import Projects from "./projects";
+import ProjectIndex from "./project-index";
 import "../stylesheets/home.css";
 import image from "../images/cartoon-coder.jpg";
 
@@ -40,7 +40,7 @@ function Home() {
         </div>
       </div>
       <Skills />
-      <Projects />
+      <ProjectIndex />
       <Footer />
     </div>
   );

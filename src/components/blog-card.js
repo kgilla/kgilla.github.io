@@ -11,7 +11,9 @@ function BlogCard(props) {
         <h3 className="blog-card-title">{props.post.title}</h3>
         <div className="blog-card-details-box">
           <h4 className="blog-detail-date">Posted on {props.post.date}</h4>
-          <h4 className="blog-detail-comment-count">0 Comments</h4>
+          <h4 className="blog-detail-comment-count">
+            {props.comments ? props.comments.length : "0"} Comments
+          </h4>
           <h4 className="blog-detail-catagory">Catagory</h4>
         </div>
         <p className="blog-card-content">{props.post.content}</p>

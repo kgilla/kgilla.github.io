@@ -1,9 +1,9 @@
 import React from "react";
 import Project from "./project";
-import "../stylesheets/projects.css";
+import "../stylesheets/project-index.css";
 import image from "../images/lion.jpg";
 
-function Projects() {
+function ProjectIndex() {
   return (
     <div id="project-section">
       <h1 className="main-heading">My Most Recent Work</h1>
@@ -18,4 +18,4 @@ function Projects() {
     </div>
   );
 }
-export default Projects;
+export default ProjectIndex;
