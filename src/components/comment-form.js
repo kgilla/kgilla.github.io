@@ -23,9 +23,14 @@ const CommentForm = (props) => {
     }
   };
 
+  //passes new comment up to blog-post
   const handleSubmit = async (e) => {
     e.preventDefault();
-    postData();
+    postData().then((response) => {
+      props.handleNewComment(response.comment);
+      setAuthor("");
+      setContent("");
+    });
   };
 
   return (
@@ -36,9 +41,10 @@ const CommentForm = (props) => {
             Name
           </label>
           <input
-            className="comment-input"
+            className="text-input"
             type="text"
             name="author"
+            value={author}
             onChange={handleChange}
           />
         </div>
@@ -49,10 +55,13 @@ const CommentForm = (props) => {
           <textarea
             className="comment-textarea"
             name="content"
+            value={content}
             onChange={handleChange}
           />
         </div>
-        <button onClick={handleSubmit}>Submit</button>
+        <button className="comment-form-button" onClick={handleSubmit}>
+          Submit
+        </button>
       </form>
     </div>
   );

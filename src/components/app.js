@@ -9,29 +9,24 @@ import BlogPost from "./blog-post";
 import "../stylesheets/app.css";
 
 function App() {
-  let [data, setData] = useState([]);
-  let [isLoading, setIsLoading] = useState(false);
+  let [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      const URL = "http://localhost:5000/api/posts/";
-      const response = await fetch(URL);
-      const data = await response.json();
-      setData(data.posts);
-      setIsLoading(false);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
     };
-    fetchData();
+
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className="main">
-      <Navbar />
+      <Navbar width={windowWidth} />
       <Router>
         <Home path="/" />
         <ProjectIndex path="/projects" />
         <Contact path="contact" />
-        <BlogIndex isLoading={isLoading} data={data} path="blog" />
+        <BlogIndex path="blog" />
         <BlogPost path="blog/:postId" />
       </Router>
     </div>

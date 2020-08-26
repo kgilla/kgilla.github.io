@@ -24,6 +24,10 @@ const BlogPost = (props) => {
     fetchData();
   }, [props.postId]);
 
+  const handleNewComment = (comment) => {
+    setComments((comments) => [...comments, comment]);
+  };
+
   return (
     <BlogLayout>
       <div>
@@ -50,7 +54,10 @@ const BlogPost = (props) => {
             </article>
             <div className="comments-section">
               <Comments comments={comments} />
-              <CommentForm postId={props.postId} />
+              <CommentForm
+                postId={props.postId}
+                handleNewComment={handleNewComment}
+              />
             </div>
           </div>
         )}

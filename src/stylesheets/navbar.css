@@ -40,3 +40,20 @@
 .nav-link:hover {
   color: #1976d2;
 }
+
+.expanded-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.1rem solid #eee;
+}
+
+.expand-menu-button {
+  padding: 0.3rem 0.8rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: transparent;
+  border: #1976d2 solid 0.2rem;
+  border-radius: 50%;
+}

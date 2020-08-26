@@ -4,9 +4,6 @@ import "../stylesheets/skills.css";
 const Skills = () => {
   return (
     <div className="skills-section">
-      {/* <h1 className="main-heading skills-main-heading">
-        What I Bring To The Table
-      </h1> */}
       <div className="skills-container">
         <div className="front-end-skills">
           <h3 className="skills-heading">Front-end Developer</h3>

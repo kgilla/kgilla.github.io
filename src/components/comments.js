@@ -4,12 +4,13 @@ import "../stylesheets/comments.css";
 const Comments = (props) => {
   return (
     <div className="comments-container">
-      <h1>Comments</h1>
+      <h1 className="main-heading">Comments</h1>
       {props.comments.length > 0 ? (
         props.comments.map((comment) => (
-          <div key={comment._id}>
-            <h3>{comment.author}</h3>
-            <p>{comment.content}</p>
+          <div className="comment-container" key={comment._id}>
+            <h3 className="comment-author">{comment.author}</h3>
+            <h4>{comment.date}</h4>
+            <p className="comment-content">{comment.content}</p>
           </div>
         ))
       ) : (
