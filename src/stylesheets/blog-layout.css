@@ -5,36 +5,59 @@
   align-items: center;
   height: 10rem;
   padding: 1rem;
-  background: #eee;
+  color: #fff;
+  overflow: auto;
+  position: relative;
+}
+
+.title-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("../images/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .title-box .main-heading {
   font-size: 2rem;
+  color: #fff;
 }
 
 .title-box .sub-heading {
+  color: #fff;
   font-size: 1.2rem;
 }
 
 .blog-main {
   max-width: 1400px;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  /* padding: 2rem; */
 }
 
 .blog-content {
+  padding: 2rem;
 }
 
 .blog-side-section {
   width: 15rem;
-  margin-right: 2rem;
   display: grid;
-  gap: 2rem;
-  background-color: #1976d2;
+  gap: 1rem;
   grid-template-rows: repeat(3, 1fr);
   align-content: flex-start;
-  border-right: 0.1rem solid #eee;
+  padding: 1rem;
 }
 
 .side-bio-section {
@@ -44,8 +67,9 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  border: 0.1rem solid #eee;
+
   border-radius: 0.5rem;
-  color: #fff;
 }
 
 .side-bio-heading {
@@ -60,18 +84,22 @@
 }
 
 .side-bio-content {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
 .side-links-section {
   grid-row: 2/3;
   padding: 1rem;
+  border: 0.1rem solid #eee;
+
   border-radius: 0.5rem;
 }
 
 .side-categories-section {
   grid-row: 3/4;
   padding: 1rem;
+  border: 0.1rem solid #eee;
+
   border-radius: 0.5rem;
 }
