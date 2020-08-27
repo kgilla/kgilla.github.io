@@ -25,14 +25,14 @@
   font-size: 1.2rem;
 }
 
-.text-input {
+/* .text-input {
   width: 18rem;
   padding: 0.5rem;
   border: 0.1rem solid #ddd;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   color: #666;
-}
+} */
 
 .comment-textarea {
   width: 39rem;

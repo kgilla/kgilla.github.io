@@ -14,11 +14,12 @@ function Contact() {
             </label>
             <input className="text-input" type="text" name="name" />
           </div>
+          <div className="contact-spacer"></div>
           <div className="form-section">
             <label className="contact-label" htmlFor="email">
               Email
             </label>
-            <input className="text-input" type="text" />
+            <input className="text-input" type="text" name="email" />
           </div>
         </div>
         <div className="form-section">
@@ -27,7 +28,9 @@ function Contact() {
           </label>
           <textarea className="contact-textarea"></textarea>
         </div>
-        <button className="contact-form-button">Submit</button>
+        <div className="form-section">
+          <button className="contact-form-button">Submit</button>
+        </div>
       </form>
     </div>
   );

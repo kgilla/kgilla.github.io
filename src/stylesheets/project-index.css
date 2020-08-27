@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 4rem;
   border-radius: 0.5rem;
 }
 
@@ -73,7 +72,7 @@ figcaption {
 
 .project-link {
   width: 66%;
-  padding: 0.75rem 4rem;
+  padding: 0.75rem 2rem;
   margin: 1rem;
   border: #1976d2 solid 0.15rem;
   border-radius: 2rem;
@@ -88,4 +87,34 @@ figcaption {
   background: #1976d2;
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 599px) {
+  .project-collection {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-collection {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .project-collection {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  .project-collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1800px) {
 }

@@ -14,7 +14,7 @@ const BlogLayout = (props) => {
       </div>
       <div className="blog-main">
         <div className="blog-content">{props.children}</div>
-        <BlogSideSection />
+        {/* <BlogSideSection /> */}
       </div>
     </div>
   );
