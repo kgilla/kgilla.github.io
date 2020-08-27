@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import BlogLayout from "./blog-layout";
 import CommentForm from "./comment-form";
 import Comments from "./comments";
@@ -40,7 +41,9 @@ const BlogPost = (props) => {
                 <h1 className="blog-post-title">{post.title}</h1>
                 <h2 className="blog-post-author">By {author.fullname}</h2>
                 <div className="blog-post-details-box">
-                  <h4 className="blog-detail-date">Posted on {post.date}</h4>
+                  <h4 className="blog-detail-date">
+                    Posted on {moment(post.date).format("LL")}
+                  </h4>
                   <h4 className="blog-detail-comment-count">
                     {comments ? comments.length : "0"} Comments
                   </h4>

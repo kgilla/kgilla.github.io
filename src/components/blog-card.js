@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
-
+import moment from "moment";
 import "../stylesheets/blog-card.css";
 
 function BlogCard(props) {
@@ -10,7 +10,9 @@ function BlogCard(props) {
       <div className="blog-card-main">
         <h3 className="blog-card-title">{props.post.title}</h3>
         <div className="blog-card-details-box">
-          <h4 className="blog-detail-date">Posted on {props.post.date}</h4>
+          <h4 className="blog-detail-date">
+            Posted on {moment(props.post.date).format("LL")}
+          </h4>
           <h4 className="blog-detail-comment-count">
             {props.comments ? props.comments.length : "0"} Comments
           </h4>

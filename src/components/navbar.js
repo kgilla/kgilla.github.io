@@ -44,14 +44,14 @@ function Navbar(props) {
       </nav>
       {expandedMenu === "open" ? (
         <nav className="expanded-nav">
-          <Link className="nav-link" to="projects">
+          <Link className="nav-link" to="projects" onClick={handleClick}>
             Projects
           </Link>
 
-          <Link className="nav-link" to="blog">
+          <Link className="nav-link" to="blog" onClick={handleClick}>
             Blog
           </Link>
-          <Link className="nav-link" to="contact">
+          <Link className="nav-link" to="contact" onClick={handleClick}>
             Contact
           </Link>
         </nav>
