@@ -47,7 +47,6 @@ const BlogPost = (props) => {
                   <h4 className="blog-detail-comment-count">
                     {comments ? comments.length : "0"} Comments
                   </h4>
-                  <h4 className="blog-detail-catagory">Catagory</h4>
                 </div>
               </header>
               <main className="blog-post-content-container">

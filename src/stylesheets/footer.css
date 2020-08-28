@@ -1,13 +1,14 @@
 .main-footer {
-  height: 10rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: #1976d2;
 }
-
-.footer-links {
+.footer-sub-heading {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .social-icon {

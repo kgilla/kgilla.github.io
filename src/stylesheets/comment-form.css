@@ -6,7 +6,7 @@
 }
 
 .comment-form {
-  width: 40rem;
+  /* width: 40rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,7 +35,7 @@
 } */
 
 .comment-textarea {
-  width: 39rem;
+  /* width: 39rem; */
   height: 10rem;
   padding: 0.5rem;
   margin-bottom: 2rem;

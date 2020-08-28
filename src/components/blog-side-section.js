@@ -1,12 +1,13 @@
 import React from "react";
 import "../stylesheets/blog-side-section.css";
 import image from "../images/cartoon-coder.jpg";
+import { Github, Linkedin } from "@styled-icons/simple-icons";
 
 const BlogSideSection = () => {
   return (
     <div className="blog-side-section">
       <div className="side-bio-section">
-        <h2 className="side-bio-heading">About Me</h2>
+        <h2 className="sub-heading">About Me</h2>
         <img
           className="side-bio-image"
           src={image}
@@ -17,9 +18,12 @@ const BlogSideSection = () => {
           Aside from coding, I enjoy cooking and all things food, playing
           guitar, indoor gardening, cycling, and playing video games.
         </p>
+        <div className="footer-links">
+          <Github className="social-icon" />
+          <Linkedin className="social-icon" />
+        </div>
       </div>
-      <div className="side-links-section">Links</div>
-      <div className="side-categories-section"> categories</div>
+      <div className="side-categories-section"> Recent Posts</div>
     </div>
   );
 };

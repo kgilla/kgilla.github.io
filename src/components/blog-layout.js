@@ -8,12 +8,14 @@ const BlogLayout = (props) => {
     <div className="blog-section">
       <Link to="/blog" className="link-banner">
         <div className="title-box">
-          <h1 className="main-heading"> Hello World To Hired</h1>
+          <div className="title-box-text">
+            <h1 className="main-heading"> Hello World To Hired</h1>
 
-          <h2 className="sub-heading">
-            A collection of experiences on the road to becoming a front-end
-            developer
-          </h2>
+            <h2 className="sub-heading">
+              A collection of experiences on the road to becoming a front-end
+              developer
+            </h2>
+          </div>
         </div>
       </Link>
       <div className="blog-main">

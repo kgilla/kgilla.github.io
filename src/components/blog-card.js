@@ -16,10 +16,9 @@ function BlogCard(props) {
           <h4 className="blog-detail-comment-count">
             {props.comments ? props.comments.length : "0"} Comments
           </h4>
-          <h4 className="blog-detail-catagory">Catagory</h4>
         </div>
         <p className="blog-card-content">{props.post.content}</p>
-        <Link to={`/blog/${props.post._id}`}>Read</Link>
+        <Link to={`/blog/${props.post._id}`}>Read more -></Link>
       </div>
     </div>
   );
