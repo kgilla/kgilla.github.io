@@ -4,13 +4,14 @@
 
 .main-heading {
   text-align: center;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
   padding: 0.5rem;
 }
 
 .sub-heading {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
-  color: #222;
+  color: #333;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "@reach/router";
 import "../stylesheets/navbar.css";
+import { Menu } from "@styled-icons/material-outlined";
 
 function Navbar(props) {
   let [expandedMenu, setExpandedMenu] = useState("closed");
@@ -33,13 +34,9 @@ function Navbar(props) {
             </Link>
           </div>
         ) : expandedMenu === "closed" ? (
-          <button className="expand-menu-button" onClick={handleClick}>
-            +
-          </button>
+          <Menu className="menu-hamburger" onClick={handleClick} />
         ) : (
-          <button className="expand-menu-button" onClick={handleClick}>
-            -
-          </button>
+          <Menu className="menu-hamburger" onClick={handleClick} />
         )}
       </nav>
       {expandedMenu === "open" ? (

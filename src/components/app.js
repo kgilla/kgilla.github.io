@@ -26,7 +26,7 @@ function App() {
         <Home path="/" />
         <ProjectIndex path="/projects" />
         <Contact path="contact" />
-        <BlogIndex path="blog" />
+        <BlogIndex path="blog" width={windowWidth} />
         <BlogPost path="blog/:postId" />
       </Router>
     </div>

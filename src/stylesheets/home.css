@@ -1,12 +1,11 @@
 .main-hero {
-  padding: 3rem;
+  padding-top: 3rem;
 }
 
 .image-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 img {
@@ -31,7 +30,7 @@ img {
 
 .colored-box {
   background: #1976d2;
-  padding-bottom: 12rem;
+  padding-bottom: 8rem;
 }
 
 .colored-box-text-box {
@@ -46,7 +45,7 @@ img {
 
 .white-sub-heading {
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   color: #fff;

@@ -6,7 +6,7 @@ import BlogSideSection from "./blog-side-section";
 const BlogLayout = (props) => {
   return (
     <div className="blog-section">
-      <Link to="/blog" className="nav-link">
+      <Link to="/blog" className="link-banner">
         <div className="title-box">
           <h1 className="main-heading"> Hello World To Hired</h1>
 

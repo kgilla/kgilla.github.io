@@ -4,6 +4,7 @@
 .project-collection {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 4rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -113,6 +114,7 @@ figcaption {
 @media (min-width: 1020px) {
   .project-collection {
     grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 2rem;
   }
 }
 

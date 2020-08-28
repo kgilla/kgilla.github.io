@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Things that still need doing:
 
-## Available Scripts
+- Home page needs a proper footer with social media links and the like.
+- Need to clean up home page title sizes for different viewport sizes.
+- Need to finalize design layout for blog/blog posts/ blog cards
+- Need to make blog more responsive for smaller viewport widths
+- Need to import a hamburger button for collapsed nav.
+- Need to proofread as well as alter copy for home page.
+- Need to get pictures of projects for thumbnails.
 
-In the project directory, you can run:
+- Need to impliment front end for blog api with rich text editor.
+- Need to make a few submissions to said blog to make it look nicer.
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Need to begin cleaning up of old projects and making them both responsive and easier on the eyes.
+- Projects are as follows:
+  1. Talking Trash
+  - Need to finish up membership status and clean up styles a bit.
+  - Need to implement responsive techniques.
+  2. Plantarama
+  - Want to clean up overall aethetic.
+  - Consider making a shopping cart where plants can be added? May need to shift to React.
+  3. Weather App
+  - Need to make responsive and clean up a bit, overall though pretty complete.
+  4. To Do List
+  - Need to clean up some logic and code.
+  - Need to make fully responsive.
+  5. Flight Booker
+  - This one may be the last one I get to as it needs the most work.
+  - Pretty barebones atm and vastly needs some styling help as well as additional detail implementations.
+  6. Mastermind Game
+  - Logic and code needs a pass over.
+  - Need to change layout as well as fix style choices and make responsive.

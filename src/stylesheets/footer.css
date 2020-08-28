@@ -1,4 +1,27 @@
 .main-footer {
   height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background: #1976d2;
+}
+
+.footer-links {
+}
+
+.social-icon {
+  height: 2rem;
+  width: auto;
+  padding: 0.2rem;
+  margin: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+}
+
+.social-icon:hover {
+  color: #1976d2;
+  background-color: #fff;
+  cursor: pointer;
 }

@@ -13,9 +13,9 @@
   color: #1976d2;
   border: 0.2rem solid #1976d2;
   font-size: 1.5rem;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-icon:hover {
@@ -34,7 +34,7 @@
   text-decoration: none;
   padding: 0.5rem 0;
   padding-left: 2rem;
-  transition: color 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link:hover {
@@ -49,11 +49,13 @@
   border-bottom: 0.1rem solid #eee;
 }
 
-.expand-menu-button {
-  padding: 0.3rem 0.8rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  background: transparent;
-  border: #1976d2 solid 0.2rem;
-  border-radius: 50%;
+.menu-hamburger {
+  width: 2rem;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-hamburger:hover {
+  color: #1976d2;
+  cursor: pointer;
 }

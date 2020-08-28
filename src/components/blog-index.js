@@ -18,7 +18,7 @@ const BlogIndex = (props) => {
     fetchData();
   }, []);
   return (
-    <BlogLayout>
+    <BlogLayout width={props.width}>
       {isLoading ? (
         <p>Loading...</p>
       ) : (

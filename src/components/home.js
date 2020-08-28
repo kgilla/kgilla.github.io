@@ -9,9 +9,9 @@ function Home() {
   return (
     <div>
       <div className="main-hero">
-        <h1 className="main-heading">Front End Developer, Handsome, Sexy</h1>
+        <h1 className="main-heading">Full Stack Developer, UI/UX Designer </h1>
         <h2 className="sub-heading">
-          I Design and code beautifly simple things and love what I do.
+          I create and code beautifly simple things and love what I do.
         </h2>
         <div className="image-box">
           <img
@@ -19,23 +19,23 @@ function Home() {
             alt="Man typing on computer with a hot coffee and cat beside him"
           />
         </div>
-        <h2 className="sub-heading">
+        {/* <h2 className="sub-heading">
           Just show me your work already!{" "}
           <a className="link-button" href="#project-section">
             My Work
           </a>
-        </h2>
+        </h2> */}
       </div>
       <div className="colored-box">
         <div className="colored-box-text-box">
           <h2 className="white-sub-heading">
-            Hey there, I'm Kenneth. Nice to meet you!
+            Hey there, I'm Kenneth. Thanks for stopping by!
           </h2>
           <p className="white-paragraph">
-            Pivoting from a longtime career as chef, I hope to apply my love of
-            creativity, dedication towards my work, and passion to continue
-            learning to your projects. I'm quietly confident, naturally curious,
-            and perpetually working on my coding chops, one problem at a time.
+            I am a self-taught developer pivoting from a longtime career as a
+            chef. My aim is to apply my passion for creativity, keen attention
+            to detail, and hunger to learn more to help create new and exciting
+            projects.
           </p>
         </div>
       </div>

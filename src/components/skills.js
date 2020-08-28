@@ -1,4 +1,15 @@
 import React from "react";
+import {
+  Html5,
+  Css3,
+  Javascript,
+  ReactLogo,
+  Sass,
+  NodeDotJs,
+  Rubygems,
+  Rubyonrails,
+  Mongodb,
+} from "@styled-icons/simple-icons";
 import "../stylesheets/skills.css";
 
 const Skills = () => {
@@ -8,9 +19,10 @@ const Skills = () => {
         <div className="front-end-skills">
           <h3 className="skills-heading">Front-end Developer</h3>
           <p className="skills-paragraph">
-            The ability to conceptualize an idea, iterate on it in real time,
-            and ultimately see it fully realized into a functional and beautiful
-            interface.
+            Front-end development is fairly comperable to cooking in more ways
+            than one. I truly enjoy the ability to conceptualize an idea,
+            iterate on it in real time, and ultimately see it fully realized
+            into a functional and beautiful interface.
           </p>
           <h4 className="skills-sub-heading">Languages & Frameworks</h4>
           <ul className="skills-list">
@@ -29,9 +41,10 @@ const Skills = () => {
         <div className="back-end-skills">
           <h3 className="skills-heading">Back-end Developer</h3>
           <p className="skills-paragraph">
-            Solving problems of all sizes, managing and maintaining data, and
-            helping the server side functions operate smoothly and more
-            effeciently, are just a few of the penis{" "}
+            Applying creativity towards solving complex problems, structuring
+            and managing data, and helping the server side functions operate
+            more effeciently, are a few of the aspects of back-end development
+            that keep me absorbed in my work.
           </p>
           <h4 className="skills-sub-heading">Languages & Frameworks</h4>
           <ul className="skills-list">
@@ -47,6 +60,17 @@ const Skills = () => {
             <li className="skills-list-item">Django</li>
           </ul>
         </div>
+      </div>
+      <div className="icon-collection">
+        <Html5 className="icon" />
+        <Css3 className="icon" />
+        <Javascript className="icon" />
+        <ReactLogo className="icon" />
+        <Sass className="icon" />
+        <NodeDotJs className="icon" />
+        <Rubygems className="icon" />
+        <Rubyonrails className="icon" />
+        <Mongodb className="icon" />
       </div>
     </div>
   );
