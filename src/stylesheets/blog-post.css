@@ -3,6 +3,10 @@
 
 .blog-post {
   padding: 2rem;
+  background-color: #fff;
+  border: 0.1rem solid #eee;
+  border-radius: 0.2rem;
+  box-shadow: 0 8px 6px -6px #aaa;
 }
 
 .blog-post-header {

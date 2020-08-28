@@ -22,8 +22,7 @@ const BlogIndex = (props) => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <div>
-          <h2>Blog Posts</h2>
+        <div className="blog-index">
           {data.map((post) => (
             <BlogCard
               post={post}

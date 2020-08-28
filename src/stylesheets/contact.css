@@ -49,22 +49,22 @@
 .contact-textarea:focus,
 .text-input:focus,
 .contact-form-button:focus {
-  box-shadow: 0 0 3pt 2pt #1976d2;
+  box-shadow: 0 0 3pt 2pt #16a085;
   outline: 0;
 }
 
 .contact-form-button {
   padding: 0.5rem 4rem;
-  border: #1976d2 solid 0.15rem;
+  border: #16a085 solid 0.15rem;
   border-radius: 2rem;
   background: none;
   font-size: 1.2rem;
-  color: #1976d2;
+  color: #16a085;
   transition: all 0.2s, color 0.2s;
 }
 
 .contact-form-button:hover {
-  background: #1976d2;
+  background: #16a085;
   color: #fff;
   cursor: pointer;
 }

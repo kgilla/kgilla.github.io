@@ -23,7 +23,6 @@ const BlogSideSection = () => {
           <Linkedin className="social-icon" />
         </div>
       </div>
-      <div className="side-categories-section"> Recent Posts</div>
     </div>
   );
 };

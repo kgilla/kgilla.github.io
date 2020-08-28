@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #1976d2;
+  background-color: #16a085;
 }
 .footer-sub-heading {
   color: #fff;
@@ -16,13 +16,14 @@
   width: auto;
   padding: 0.2rem;
   margin: 1rem;
-  color: #fff;
+  color: #16a085;
+  background-color: #fff;
   border-radius: 50%;
   transition: all 0.1s ease-in;
 }
 
 .social-icon:hover {
-  color: #1976d2;
-  background-color: #fff;
+  background-color: #16a085;
+  color: #fff;
   cursor: pointer;
 }
