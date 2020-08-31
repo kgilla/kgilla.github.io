@@ -1,8 +1,6 @@
 .blog-card {
   display: flex;
-  height: 10rem;
   background-color: #fff;
-  border: 0.1rem solid #eee;
   border-radius: 0.2rem;
   box-shadow: 0 8px 6px -6px #aaa;
 }
@@ -32,6 +30,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 0.5rem;
   color: #666;
   font-size: 0.8rem;
   border-bottom: 0.1rem solid #eee;
@@ -48,4 +47,26 @@
 .link {
   color: #16a085;
   font-weight: 600;
+}
+
+@media (max-width: 599px) {
+  .blog-card {
+    box-shadow: none;
+  }
+
+  .blog-card-details-box {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
 }

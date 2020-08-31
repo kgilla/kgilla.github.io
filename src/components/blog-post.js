@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import BlogLayout from "./blog-layout";
 import CommentForm from "./comment-form";
-import Comments from "./comments";
+import CommentIndex from "./comment-index";
 import "../stylesheets/blog-post.css";
 
 const BlogPost = (props) => {
@@ -39,13 +39,11 @@ const BlogPost = (props) => {
             <article className="blog-post">
               <header className="blog-post-header">
                 <h1 className="blog-post-title">{post.title}</h1>
-                <h2 className="blog-post-author">By {author.fullname}</h2>
                 <div className="blog-post-details-box">
-                  <h4 className="blog-detail-date">
+                  <h2 className="blog-post-author">By {author.fullname}</h2>
+
+                  <h4 className="blog-post-date">
                     Posted on {moment(post.date).format("LL")}
-                  </h4>
-                  <h4 className="blog-detail-comment-count">
-                    {comments ? comments.length : "0"} Comments
                   </h4>
                 </div>
               </header>
@@ -54,8 +52,9 @@ const BlogPost = (props) => {
               </main>
               <footer></footer>
             </article>
-            <div className="comments-section">
-              <Comments comments={comments} />
+            <div className="comment-section">
+              <CommentIndex comments={comments} />
+
               <CommentForm
                 postId={props.postId}
                 handleNewComment={handleNewComment}

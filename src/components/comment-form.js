@@ -35,9 +35,10 @@ const CommentForm = (props) => {
 
   return (
     <div className="comment-form-container">
-      <form className="comment-form">
+      <form className="form">
+        <h1 class="comment-form-heading">Leave A Comment</h1>
         <div className="form-section">
-          <label className="comment-label" htmlFor="author">
+          <label className="label" htmlFor="author">
             Name
           </label>
           <input
@@ -49,17 +50,17 @@ const CommentForm = (props) => {
           />
         </div>
         <div className="form-section">
-          <label className="comment-label" htmlFor="content">
+          <label className="label" htmlFor="content">
             Comment
           </label>
           <textarea
-            className="comment-textarea"
+            className="textarea"
             name="content"
             value={content}
             onChange={handleChange}
           />
         </div>
-        <button className="comment-form-button" onClick={handleSubmit}>
+        <button className="form-button" onClick={handleSubmit}>
           Submit
         </button>
       </form>

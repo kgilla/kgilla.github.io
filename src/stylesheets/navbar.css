@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 4rem;
   margin: 0 auto;
 }
 
@@ -46,6 +45,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1rem;
   border-bottom: 0.1rem solid #eee;
 }
 
@@ -58,4 +58,28 @@
 .menu-hamburger:hover {
   color: #16a085;
   cursor: pointer;
+}
+
+@media (max-width: 599px) {
+  .main-nav {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-nav {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-nav {
+    padding: 0.5rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
 }

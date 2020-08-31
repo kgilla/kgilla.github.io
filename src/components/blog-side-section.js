@@ -18,10 +18,10 @@ const BlogSideSection = () => {
           Aside from coding, I enjoy cooking and all things food, playing
           guitar, indoor gardening, cycling, and playing video games.
         </p>
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <Github className="social-icon" />
           <Linkedin className="social-icon" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
