@@ -1,7 +1,11 @@
+.blog-index {
+  padding-top: 0.5rem;
+}
+
 .blog-card {
   display: flex;
   background-color: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   box-shadow: 0 8px 6px -6px #aaa;
 }
 
@@ -11,6 +15,7 @@
   background-image: url("../images/code-on-laptop.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .blog-card-main {
@@ -50,10 +55,6 @@
 }
 
 @media (max-width: 599px) {
-  .blog-card {
-    box-shadow: none;
-  }
-
   .blog-card-details-box {
     flex-direction: column;
   }

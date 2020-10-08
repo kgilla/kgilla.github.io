@@ -1,9 +1,9 @@
 .main-footer {
-  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   background-color: #16a085;
 }
 .footer-sub-heading {
@@ -23,7 +23,7 @@
 }
 
 .social-icon:hover {
-  background-color: #16a085;
+  background-color: #138d75;
   color: #fff;
   cursor: pointer;
 }

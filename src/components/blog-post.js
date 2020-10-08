@@ -3,6 +3,7 @@ import moment from "moment";
 import BlogLayout from "./blog-layout";
 import CommentForm from "./comment-form";
 import CommentIndex from "./comment-index";
+import Loader from "./loader";
 import "../stylesheets/blog-post.css";
 
 const BlogPost = (props) => {
@@ -14,7 +15,7 @@ const BlogPost = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const URL = `http://localhost:5000/api/posts/${props.postId}`;
+      const URL = `https://api-myblog.herokuapp.com/posts/${props.postId}`;
       const response = await fetch(URL);
       const data = await response.json();
       setPost(data.post);
@@ -33,7 +34,7 @@ const BlogPost = (props) => {
     <BlogLayout>
       <div>
         {isLoading ? (
-          <p>Loading...</p>
+          <Loader />
         ) : (
           <div className="blog-post-container">
             <article className="blog-post">

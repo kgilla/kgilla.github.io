@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./blog-card";
 import BlogLayout from "./blog-layout";
+import Loader from "./loader";
 
 const BlogIndex = (props) => {
   let [data, setData] = useState([]);
@@ -9,7 +10,7 @@ const BlogIndex = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const URL = "http://localhost:5000/api/posts/";
+      const URL = "https://api-myblog.herokuapp.com/posts/";
       const response = await fetch(URL);
       const data = await response.json();
       setData(data.posts);
@@ -20,7 +21,7 @@ const BlogIndex = (props) => {
   return (
     <BlogLayout width={props.width}>
       {isLoading ? (
-        <p>Loading...</p>
+        <Loader />
       ) : (
         <div className="blog-index">
           {data.map((post) => (

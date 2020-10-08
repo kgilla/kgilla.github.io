@@ -1,13 +1,7 @@
 Things that still need doing:
 
-- Home page needs a proper footer with social media links and the like.
-- Need to clean up home page title sizes for different viewport sizes.
-- Need to finalize design layout for blog/blog posts/ blog cards
-- Need to make blog more responsive for smaller viewport widths
-- Need to import a hamburger button for collapsed nav.
-- Need to proofread as well as alter copy for home page.
+- Need to hook up contact form to db so submissions are saved.
 - Need to get pictures of projects for thumbnails.
-
 - Need to impliment front end for blog api with rich text editor.
 - Need to make a few submissions to said blog to make it look nicer.
 

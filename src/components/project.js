@@ -10,8 +10,13 @@ const Project = (props) => {
           className="project-thumb"
         ></img>
         <figcaption>
-          <button className="project-link">View Website</button>
-          <button className="project-link">View Code</button>
+          <h2 className="project-title">{props.title}</h2>
+          <a href={props.liveLink} target="_blank" className="project-link">
+            View Website
+          </a>
+          <a href={props.codeLink} target="_blank" className="project-link">
+            View Code
+          </a>
         </figcaption>
         <div className="project-overlay"></div>
       </figure>

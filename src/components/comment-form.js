@@ -6,7 +6,7 @@ const CommentForm = (props) => {
   let [content, setContent] = useState("");
 
   const postData = async () => {
-    const URL = `http://localhost:5000/api/posts/${props.postId}/comments/create`;
+    const URL = `https://api-myblog.herokuapp.com/posts/${props.postId}/comments/create`;
     const response = await fetch(URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

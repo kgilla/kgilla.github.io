@@ -1,7 +1,6 @@
 import React from "react";
 import "../stylesheets/blog-side-section.css";
 import image from "../images/cartoon-coder.jpg";
-import { Github, Linkedin } from "@styled-icons/simple-icons";
 
 const BlogSideSection = () => {
   return (
@@ -18,10 +17,6 @@ const BlogSideSection = () => {
           Aside from coding, I enjoy cooking and all things food, playing
           guitar, indoor gardening, cycling, and playing video games.
         </p>
-        {/* <div className="footer-links">
-          <Github className="social-icon" />
-          <Linkedin className="social-icon" />
-        </div> */}
       </div>
     </div>
   );
