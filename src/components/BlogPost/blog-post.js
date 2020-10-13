@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
+import ReactHtmlParser from "react-html-parser";
+
 import BlogLayout from "../BlogLayout";
-import CommentForm from "../CommentForm";
 import CommentIndex from "../CommentIndex";
 import Loader from "../Loader";
 import "./blog-post.css";
@@ -19,16 +20,12 @@ const BlogPost = (props) => {
       const response = await fetch(URL);
       const data = await response.json();
       setPost(data.post);
-      setAuthor(data.author);
+      setAuthor(data.post.author);
       setComments(data.post.comments);
       setIsLoading(false);
     };
     fetchData();
   }, [props.postId]);
-
-  const handleNewComment = (comment) => {
-    setComments((comments) => [...comments, comment]);
-  };
 
   return (
     <BlogLayout>
@@ -48,18 +45,13 @@ const BlogPost = (props) => {
                   </h4>
                 </div>
               </header>
-              <main className="blog-post-content-container">
-                <p className="blog-post-content">{post.content}</p>
+              <main className="blog-post-content">
+              {ReactHtmlParser(post.content)}
               </main>
               <footer></footer>
             </article>
             <div className="comment-section">
-              <CommentIndex comments={comments} />
-
-              <CommentForm
-                postId={props.postId}
-                handleNewComment={handleNewComment}
-              />
+              <CommentIndex comments={comments} postID={props.postId}/>
             </div>
           </div>
         )}

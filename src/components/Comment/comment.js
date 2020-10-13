@@ -6,9 +6,9 @@ import "./comment.css";
 const Comment = (props) => {
   return (
     <div className="comment-container">
-      <header class="comment-header">
+      <header className="comment-header">
         <h3 className="comment-author">{props.comment.author}</h3>
-        <h4 class="comment-date">
+        <h4 className="comment-date">
           Posted on {moment(props.comment.date).format("LL")}
         </h4>
       </header>

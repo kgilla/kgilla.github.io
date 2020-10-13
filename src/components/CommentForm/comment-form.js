@@ -6,43 +6,46 @@ const CommentForm = (props) => {
   let [content, setContent] = useState("");
 
   const postData = async () => {
-    const URL = `https://api-myblog.herokuapp.com/posts/${props.postId}/comments/create`;
+    const URL = `https://api-myblog.herokuapp.com/comments/create`;
     const response = await fetch(URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ author: author, content: content }),
+      body: JSON.stringify({ author, content, postID: props.postID }),
     });
-    return response.json();
+    const data = await response.json();
+    sendNewComment(data.comment);
   };
+
+  const sendNewComment = (comment) => {
+    props.handleComment(comment);
+  };
+
+  const clearForms = () => {
+    setAuthor("");
+    setContent("");
+  }
 
   const handleChange = (e) => {
-    if (e.target.name === "author") {
-      setAuthor(e.target.value);
-    } else if (e.target.name === "content") {
-      setContent(e.target.value);
-    }
+    e.target.name === "author" ? setAuthor(e.target.value) 
+    : setContent(e.target.value);
   };
 
-  //passes new comment up to blog-post
   const handleSubmit = async (e) => {
     e.preventDefault();
-    postData().then((response) => {
-      props.handleNewComment(response.comment);
-      setAuthor("");
-      setContent("");
-    });
+    postData()
+    clearForms()
   };
 
   return (
     <div className="comment-form-container">
-      <form className="form">
-        <h1 class="comment-form-heading">Leave A Comment</h1>
+      <form className="form" id="comment-form">
+        <h1 className="comment-form-heading">Leave A Comment</h1>
         <div className="form-section">
           <label className="label" htmlFor="author">
             Name
           </label>
           <input
-            className="text-input"
+            className="form-input"
             type="text"
             name="author"
             value={author}
@@ -54,7 +57,7 @@ const CommentForm = (props) => {
             Comment
           </label>
           <textarea
-            className="textarea"
+            className="form-input"
             name="content"
             value={content}
             onChange={handleChange}

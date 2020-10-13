@@ -8,13 +8,13 @@
   background-color: #fff;
   border: 0.1rem solid #eee;
   border-radius: 0.5rem;
-  box-shadow: 0 8px 6px -6px #aaa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post-title {
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  color: #222;
 }
 
 .blog-post-details-box {
@@ -22,17 +22,17 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  padding: 0.5rem 0;
   border-bottom: 0.1rem solid #eee;
 }
 
 .blog-post-author {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
 }
 
 .blog-post-date {
-  color: #444;
-  font-style: italic;
+  color: #222;
 }
 
 .comment-section {
