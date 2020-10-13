@@ -35,10 +35,21 @@
   color: #222;
 }
 
+.blog-post-content p {
+  line-height: 2;
+}
+
+.blog-post-content img,
+.blog-post-content svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 1rem 0;
+}
+
 .comment-section {
   border-radius: 0.5rem;
   background-color: #fff;
-  box-shadow: 0 8px 6px -6px #aaa;
 }
 
 @media (max-width: 599px) {

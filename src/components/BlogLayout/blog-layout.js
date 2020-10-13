@@ -21,7 +21,7 @@ const BlogLayout = (props) => {
       </Link>
       <div className="blog-main">
         <div className="blog-content">{props.children}</div>
-        <BlogSideSection />
+        {props.isLoading ? null : <BlogSideSection />}
       </div>
       <Footer />
     </div>

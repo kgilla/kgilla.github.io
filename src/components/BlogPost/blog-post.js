@@ -28,7 +28,7 @@ const BlogPost = (props) => {
   }, [props.postId]);
 
   return (
-    <BlogLayout>
+    <BlogLayout isLoading={isLoading}>
       <div>
         {isLoading ? (
           <Loader />
@@ -46,12 +46,12 @@ const BlogPost = (props) => {
                 </div>
               </header>
               <main className="blog-post-content">
-              {ReactHtmlParser(post.content)}
+                {ReactHtmlParser(post.content)}
               </main>
               <footer></footer>
             </article>
             <div className="comment-section">
-              <CommentIndex comments={comments} postID={props.postId}/>
+              <CommentIndex comments={comments} postID={props.postId} />
             </div>
           </div>
         )}

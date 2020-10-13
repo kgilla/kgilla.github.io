@@ -13,9 +13,9 @@ const BlogSideSection = () => {
           alt="cartoon of coder"
         ></img>
         <p className="side-bio-content">
-          Hey there my name is Kenneth and I am an aspiring front-end developer.
-          Aside from coding, I enjoy cooking and all things food, playing
-          guitar, indoor gardening, cycling, and playing video games.
+          Hey there my name is Kenneth and I am an aspiring full-stack
+          developer. Aside from coding, I enjoy cooking and all things food,
+          playing guitar, indoor gardening, cycling, and playing video games.
         </p>
       </div>
     </div>

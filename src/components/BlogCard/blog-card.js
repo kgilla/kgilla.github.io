@@ -28,11 +28,6 @@ function BlogCard(props) {
         <main className="blog-card-content">
           {ReactHtmlParser(props.post.blurb)}
         </main>
-        <Link to={`/blog/${props.post._id}`}>
-          <footer className="blog-card-footer">
-            <h4>READ MORE</h4>
-          </footer>
-        </Link>
       </div>
     </div>
   );
