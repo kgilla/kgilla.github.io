@@ -24,6 +24,19 @@
   border-radius: 0.5rem;
 }
 
+.form-input-error {
+  padding: 0.5rem;
+  /* border: 0.1rem solid #a93226; */
+  color: #666;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3pt 2pt #c0392b;
+}
+
+.form-input-error:focus {
+  outline: none;
+}
+
 textarea {
   font-family: inherit;
   resize: vertical;
@@ -32,4 +45,8 @@ textarea {
 .form-input:focus {
   outline: none;
   box-shadow: 0 0 3pt 2pt #16a085;
+}
+
+.error {
+  color: #ec7063;
 }

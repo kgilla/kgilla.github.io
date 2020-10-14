@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .form-section {
@@ -36,6 +35,19 @@
   color: #666;
 }
 
+.text-input-error {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+  box-shadow: 0 0 3pt 2pt #c0392b;
+}
+
+.text-input-error:focus {
+  outline: none;
+}
+
 .textarea {
   border: 0.1rem solid #ddd;
   border-radius: 0.5rem;
@@ -44,6 +56,21 @@
   font-family: inherit;
   color: #666;
   resize: vertical;
+}
+
+.textarea-error {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #666;
+  resize: vertical;
+  box-shadow: 0 0 3pt 2pt #c0392b;
+}
+
+.textarea-error:focus {
+  outline: none;
 }
 
 .textarea:focus,
@@ -67,6 +94,12 @@
   background: #16a085;
   color: #fff;
   cursor: pointer;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #196f3d;
 }
 
 @media (max-width: 599px) {
