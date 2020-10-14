@@ -11,7 +11,7 @@ function Home() {
       <div className="main-hero">
         <h1 className="main-heading">Full Stack Developer, UI/UX Designer </h1>
         <h2 className="sub-heading">
-          I create and code beautifly simple things and love what I do.
+          I create and code beautifully simple things and love what I do.
         </h2>
         <div className="image-box">
           <img
@@ -19,12 +19,6 @@ function Home() {
             alt="Man typing on computer with a hot coffee and cat beside him"
           />
         </div>
-        {/* <h2 className="sub-heading">
-          Just show me your work already!{" "}
-          <a className="link-button" href="#project-section">
-            My Work
-          </a>
-        </h2> */}
       </div>
       <div className="colored-box">
         <div className="colored-box-text-box">

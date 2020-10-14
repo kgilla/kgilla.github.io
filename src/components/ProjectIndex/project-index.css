@@ -11,9 +11,12 @@
 }
 
 .project-container {
+  display: flex;
   position: relative;
+  border: 0.1rem solid #ddd;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 figure {
@@ -37,6 +40,7 @@ figure:hover > figcaption {
 .project-thumb {
   align-self: flex-start;
   width: 100%;
+  height: 100%;
   -webkit-transition: all 0.45s ease-in;
   transition: all 0.45s ease-in;
 }
@@ -49,10 +53,11 @@ figcaption {
   height: 100%;
   opacity: 0;
   z-index: -1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  gap: 1rem;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
@@ -123,7 +128,4 @@ figcaption {
 }
 
 @media (min-width: 1400px) {
-  .project-collection {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

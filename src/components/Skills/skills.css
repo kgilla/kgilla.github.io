@@ -1,7 +1,8 @@
 /* skills */
 
 .skills-section {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1200px;
   position: relative;
   top: -8rem;
   margin: 0 auto;
@@ -13,35 +14,34 @@
 
 .skills-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .front-end-skills,
 .back-end-skills {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 .skills-heading {
   font-size: 1.4rem;
   font-weight: 700;
-  padding: 0.5rem;
   text-align: center;
 }
 
 .skills-sub-heading {
   font-size: 1.2rem;
   font-weight: 500;
-  padding: 0.5rem;
   text-align: center;
   color: #16a085;
 }
 
 .skills-paragraph {
-  min-height: 10rem;
-  padding: 1rem 0;
   line-height: 2;
   color: #333;
   text-align: center;
@@ -80,6 +80,10 @@
 
   .skills-container {
     flex-direction: column;
+  }
+
+  .back-end-skills {
+    border-top: 0.1rem solid #eee;
   }
 
   .icon-collection {
@@ -123,6 +127,7 @@
 
   .back-end-skills {
     border-left: 0.1rem solid #eee;
+    border-top: none;
   }
 
   .icon-collection {
