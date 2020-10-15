@@ -27,6 +27,9 @@ function Contact() {
 
   const handleSuccess = (data) => {
     setSuccess(data.message);
+    setTimeout(() => {
+      setSuccess("");
+    }, 5000);
     clearForm();
   };
 

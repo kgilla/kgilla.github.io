@@ -26,6 +26,9 @@ const CommentForm = (props) => {
   const sendNewComment = (comment) => {
     props.handleComment(comment);
     setSuccess("Comment created successfully!");
+    setTimeout(() => {
+      setSuccess("");
+    }, 5000);
   };
 
   const clearForm = () => {

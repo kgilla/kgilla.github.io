@@ -1,27 +1,25 @@
 .comment-container {
-  margin-bottom: 1rem;
-  padding: 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 0.1rem solid #eee;
-}
-
-.comment-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
 }
 
 .comment-author {
   font-size: 1.1rem;
   font-weight: 600;
-  margin-right: 0.5rem;
+  color: #222;
 }
 
 .comment-date {
   font-style: italic;
-  color: #444;
+  color: #666;
   font-size: 0.9rem;
 }
 
 .comment-content {
+  line-height: 2;
+  font-size: 1rem;
+  color: #444;
 }

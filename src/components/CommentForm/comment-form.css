@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 0;
 }
 
 #comment-form {
-  width: 96%;
+  width: 100%;
   max-width: 30rem;
 }
 
 .comment-form-heading {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #444;
+  color: #222;
 }
 
 .form-input {
@@ -49,4 +49,19 @@ textarea {
 
 .error {
   color: #ec7063;
+}
+
+@media (max-width: 575.9px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }

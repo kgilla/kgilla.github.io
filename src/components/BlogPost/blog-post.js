@@ -29,33 +29,31 @@ const BlogPost = (props) => {
 
   return (
     <BlogLayout isLoading={isLoading}>
-      <div>
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <div className="blog-post-container">
-            <article className="blog-post">
-              <header className="blog-post-header">
-                <h1 className="blog-post-title">{post.title}</h1>
-                <div className="blog-post-details-box">
-                  <h2 className="blog-post-author">By {author.fullname}</h2>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="blog-post-container">
+          <article className="blog-post">
+            <header className="blog-post-header">
+              <h1 className="blog-post-title">{post.title}</h1>
+              <div className="blog-post-details-box">
+                <h2 className="blog-post-author">By {author.fullname}</h2>
 
-                  <h4 className="blog-post-date">
-                    Posted on {moment(post.date).format("LL")}
-                  </h4>
-                </div>
-              </header>
-              <main className="blog-post-content">
-                {ReactHtmlParser(post.content)}
-              </main>
-              <footer></footer>
-            </article>
-            <div className="comment-section">
-              <CommentIndex comments={comments} postID={props.postId} />
-            </div>
+                <h4 className="blog-post-date">
+                  Posted on {moment(post.date).format("LL")}
+                </h4>
+              </div>
+            </header>
+            <main className="blog-post-content">
+              {ReactHtmlParser(post.content)}
+            </main>
+            <footer></footer>
+          </article>
+          <div className="comment-section">
+            <CommentIndex comments={comments} postID={props.postId} />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </BlogLayout>
   );
 };

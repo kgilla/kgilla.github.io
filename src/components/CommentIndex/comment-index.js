@@ -8,7 +8,7 @@ const Comments = (props) => {
 
   const handleNewComment = (newComment) => {
     if (comments.length < 1) {
-      setComments([newComment])
+      setComments([newComment]);
     } else {
       setComments((comments) => [...comments, newComment]);
     }
@@ -20,14 +20,13 @@ const Comments = (props) => {
         Comments ({comments ? comments.length : "0"})
       </h1>
       {comments.length > 0 ? (
-        comments.map((comment) => (
-          <Comment
-            comment={comment}
-            key={comment._id}
-          />
-        ))
+        <div id="comment-index">
+          {comments.map((comment) => (
+            <Comment comment={comment} key={comment._id} />
+          ))}
+        </div>
       ) : (
-        <div>Nothing here</div>
+        <div>No comments yet</div>
       )}
       <CommentForm postID={props.postID} handleComment={handleNewComment} />
     </div>
