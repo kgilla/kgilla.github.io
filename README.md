@@ -1,4 +1,3 @@
-Things that still need doing:
+# My Portfolio
 
-- Need to make real Readme.
-- Can do a pass over on both forms - make sure to add validators and dynamically update what is right and wrong for end user.
+This website is intended to be a cumulative showcase of my various projects so far as well as a showcase for the skillset I currently posess. This website is built using React for the majority of the frontend

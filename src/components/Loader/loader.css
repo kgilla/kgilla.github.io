@@ -1,17 +1,21 @@
 #spinner-box {
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0.1rem solid #ddd;
   border-radius: 0.5rem;
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .lds-spinner {
-  position: relative;
   margin: 0 auto;
   width: 80px;
   height: 80px;

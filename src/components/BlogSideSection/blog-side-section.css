@@ -14,10 +14,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.side-bio-image {
-  width: 10rem;
-  height: auto;
+.side-blog-image-container {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.side-bio-image {
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .side-bio-content {
