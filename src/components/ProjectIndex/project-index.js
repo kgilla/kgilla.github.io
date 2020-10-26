@@ -7,6 +7,7 @@ import {
   mastermind,
   talkinTrash,
   fourCast,
+  flyAway,
 } from "../../images/screenshots/index";
 
 function ProjectIndex() {
@@ -49,7 +50,13 @@ function ProjectIndex() {
           liveLink="https://mastermind-sinatra.herokuapp.com/"
           codeLink="https://github.com/kgilla/mastermind-webapp"
         />
-        {/* <Project image={image} altImage="lion" /> */}
+        <Project
+          title="Fly Away"
+          image={flyAway}
+          altImage="Fly Away project homepage"
+          liveLink="https://fly-book.herokuapp.com/"
+          codeLink="https://github.com/kgilla/flight-booker"
+        />
       </div>
     </div>
   );
