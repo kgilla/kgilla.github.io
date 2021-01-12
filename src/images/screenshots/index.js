@@ -5,3 +5,4 @@ export { default as talkinTrash } from "./talkin-trash-screenshot.png";
 export { default as mastermind } from "./mastermind-screenshot.png";
 export { default as flyAway } from "./flyaway-screenshot.png";
 export { default as battleboats } from "./battleboats-screenshot.png";
+export { default as seddit } from "./seddit-screenshot.png";

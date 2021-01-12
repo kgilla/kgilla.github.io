@@ -9,6 +9,7 @@ import {
   fourCast,
   flyAway,
   battleboats,
+  seddit,
 } from "../../images/screenshots/index";
 
 function ProjectIndex() {
@@ -16,6 +17,13 @@ function ProjectIndex() {
     <div id="project-section">
       <h1 className="main-heading">My Most Recent Work</h1>
       <div className="project-collection">
+        <Project
+          title="S/eddit"
+          image={seddit}
+          altImage="S/eddit Project Homepage"
+          liveLink="https://kgilla.github.io/reddit-clone/"
+          codeLink="https://github.com/kgilla/reddit-clone"
+        />
         <Project
           title="BattleBoats"
           image={battleboats}
