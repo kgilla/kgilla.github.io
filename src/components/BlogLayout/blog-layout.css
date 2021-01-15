@@ -39,8 +39,8 @@
 @media (max-width: 575.9px) {
   .blog-main {
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 4px;
+    gap: 16px;
+    margin: 16px 4px;
   }
 
   .blog-content {
@@ -52,7 +52,7 @@
   .blog-main {
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 8px;
+    margin: 16px;
   }
 }
 

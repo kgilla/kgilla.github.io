@@ -2,7 +2,6 @@ import React from "react";
 import "./blog-layout.css";
 import { Link } from "@reach/router";
 import BlogSideSection from "../BlogSideSection";
-import Footer from "../Footer";
 
 const BlogLayout = (props) => {
   return (
@@ -23,7 +22,6 @@ const BlogLayout = (props) => {
         <div className="blog-content">{props.children}</div>
         {props.isLoading ? null : <BlogSideSection />}
       </div>
-      <Footer />
     </div>
   );
 };

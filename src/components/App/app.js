@@ -7,6 +7,7 @@ import Home from "../Home";
 import Contact from "../Contact";
 import ProjectIndex from "../ProjectIndex";
 import BlogPost from "../BlogPost";
+import Footer from "../Footer";
 
 import "./reset.css";
 import "./app.css";
@@ -32,6 +33,7 @@ function App() {
         <BlogIndex path="blog" width={windowWidth} />
         <BlogPost path="blog/:postId" />
       </Router>
+      <Footer />
     </div>
   );
 }

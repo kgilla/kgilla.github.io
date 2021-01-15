@@ -1,6 +1,5 @@
 import React from "react";
 import Skills from "../Skills";
-import Footer from "../Footer";
 import ProjectIndex from "../ProjectIndex";
 import "./home.css";
 import image from "../../images/cartoon-coder.jpg";
@@ -37,7 +36,6 @@ function Home() {
       </div>
       <Skills />
       <ProjectIndex />
-      <Footer />
     </div>
   );
 }
