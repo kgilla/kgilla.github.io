@@ -21,7 +21,6 @@ function Footer() {
           <Linkedin className="social-icon" />
         </a>
       </div>
-      <h2 className="footer-sub-heading">Crafted by me, Kgilla.</h2>
     </div>
   );
 }

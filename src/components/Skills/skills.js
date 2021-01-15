@@ -33,10 +33,6 @@ const Skills = () => {
             <li className="skills-list-item">Bootstrap</li>
             <li className="skills-list-item">Sass</li>
           </ul>
-          <h4 className="skills-sub-heading">Currently Learning</h4>
-          <ul className="skills-list">
-            <li className="skills-list-item">Angular</li>
-          </ul>
         </div>
         <div className="back-end-skills">
           <h3 className="skills-heading">Back-end Developer</h3>
@@ -54,10 +50,6 @@ const Skills = () => {
             <li className="skills-list-item">Ruby On Rails</li>
             <li className="skills-list-item">MongoDB</li>
             <li className="skills-list-item">SQL</li>
-          </ul>
-          <h4 className="skills-sub-heading">Currently Learning</h4>
-          <ul className="skills-list">
-            <li className="skills-list-item">Django</li>
           </ul>
         </div>
       </div>

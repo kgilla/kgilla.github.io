@@ -9,8 +9,8 @@
 .nav-icon {
   padding: 0.2rem;
   font-weight: 700;
-  color: #16a085;
-  border: 0.2rem solid #16a085;
+  color: var(--theme-color);
+  border: 0.2rem solid var(--theme-color);
   font-family: "Permanent Marker", cursive;
   font-size: 1.2rem;
   border-radius: 0.5rem;
@@ -19,7 +19,7 @@
 }
 
 .nav-icon:hover {
-  background: #16a085;
+  background: var(--theme-color);
   color: #fff;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .nav-link:hover {
-  color: #138d75;
+  color: var(--theme-color);
 }
 
 .expanded-nav {
@@ -49,6 +49,35 @@
   justify-content: center;
   padding-bottom: 1rem;
   border-bottom: 0.1rem solid #eee;
+  animation: expand ease-in-out 2s;
+}
+
+.open-nav {
+  animation: expand linear 0.4s;
+}
+
+.spinulator {
+  animation: spin ease 0.4s;
+}
+
+@keyframes spin {
+  from {
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    max-height: 1px;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
 }
 
 .menu-hamburger {
@@ -58,7 +87,7 @@
 }
 
 .menu-hamburger:hover {
-  color: #16a085;
+  color: var(--theme-color);
   cursor: pointer;
 }
 

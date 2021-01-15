@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/scott-webb-ffWnaif_9T0-unsplash.jpg");
   background-size: cover;
@@ -39,6 +39,7 @@
   .blog-main {
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin: 1rem 0.5rem;
   }
 
   .blog-content {
@@ -50,6 +51,7 @@
   .blog-main {
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin: 1rem;
   }
 }
 
