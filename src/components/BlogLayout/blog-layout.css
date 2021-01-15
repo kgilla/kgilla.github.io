@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 350px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../images/scott-webb-ffWnaif_9T0-unsplash.jpg");
   background-size: cover;
@@ -33,13 +33,14 @@
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
+  justify-self: center;
 }
 
 @media (max-width: 575.9px) {
   .blog-main {
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 1rem 0.5rem;
+    margin: 4px;
   }
 
   .blog-content {
@@ -51,14 +52,14 @@
   .blog-main {
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 1rem;
+    margin: 8px;
   }
 }
 
 @media (min-width: 768px) {
   .blog-main {
-    padding: 1rem;
-    gap: 1rem;
+    padding: 8px;
+    gap: 16px;
   }
 
   .blog-main {
@@ -68,8 +69,8 @@
 
 @media (min-width: 992px) {
   .blog-main {
-    padding: 2rem;
-    gap: 2rem;
+    padding: 16px;
+    gap: 16px;
     grid-template-columns: 1fr 15rem;
   }
 }
