@@ -2,16 +2,16 @@
 }
 
 .project-collection {
-  max-width: 1400px;
-  margin: 0 auto;
   display: grid;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 @media (max-width: 599px) {
   .project-collection {
     grid-template-columns: 1fr;
     gap: 32px;
-    margin: 8px;
+    padding: 8px;
   }
 }
 
@@ -19,7 +19,7 @@
   .project-collection {
     grid-template-columns: 1fr;
     gap: 32px;
-    margin: 8px;
+    padding: 8px;
   }
 }
 
@@ -27,14 +27,14 @@
   .project-collection {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    margin: 16px;
+    padding: 16px;
   }
 }
 
 @media (min-width: 1020px) {
   .project-collection {
     gap: 32px;
-    margin: 32px;
+    padding: 32px;
   }
 }
 
