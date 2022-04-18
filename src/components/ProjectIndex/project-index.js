@@ -10,6 +10,7 @@ import {
   flyAway,
   battleboats,
   seddit,
+  shmurdle,
 } from "../../images/screenshots/index";
 
 function ProjectIndex() {
@@ -17,6 +18,14 @@ function ProjectIndex() {
     <div id="project-section">
       <h1 className="main-heading">My Most Recent Work</h1>
       <div className="project-collection">
+        <Project
+          title="Shmurdle"
+          blurb="Wordle clone made using vanilla Javascript and CSS."
+          image={shmurdle}
+          altImage="Shmurdle Project Homepage"
+          liveLink="https://kgilla.github.io/wordle-clone/"
+          codeLink="https://github.com/kgilla/wordle-clone"
+        />
         <Project
           title="S/eddit"
           blurb="Robust, full-featured Reddit clone built using MERN stack (MongoDB, Express, React, Node.JS).
