@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edb74145f40008914b261bc1e20e4c9e",
+    "revision": "cbc24b5245e7c4887db32884efd68273",
     "url": "/index.html"
   },
   {
-    "revision": "369e75bb7047462a5bb8",
+    "revision": "e0b0f28ca1ec1825b9ad",
     "url": "/static/css/main.52b42c8e.chunk.css"
   },
   {
-    "revision": "e838f17de7ee3598ca44",
-    "url": "/static/js/2.13b22375.chunk.js"
+    "revision": "ac86ee8ecb9e34f71219",
+    "url": "/static/js/2.57d2cb30.chunk.js"
   },
   {
     "revision": "29b11104aa0dcd865035d3d1c7ba106f",
-    "url": "/static/js/2.13b22375.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.57d2cb30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "369e75bb7047462a5bb8",
-    "url": "/static/js/main.e6c29ecd.chunk.js"
+    "revision": "e0b0f28ca1ec1825b9ad",
+    "url": "/static/js/main.ea1e4696.chunk.js"
   },
   {
     "revision": "efe25b4b8d1f7af9da4b",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "79198cf28e06b37214104180a84d396f",
     "url": "/static/media/seddit-screenshot.79198cf2.png"
+  },
+  {
+    "revision": "9307db0a73722eac26e737c4c2b20530",
+    "url": "/static/media/shmurdle-screenshot.9307db0a.png"
   },
   {
     "revision": "c19a77949c99436187ba10366351e95d",
