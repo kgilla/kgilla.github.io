@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BlogCard from "../BlogCard";
 import BlogLayout from "../BlogLayout";
 import Loader from "../Loader";
+import { BASE_URL } from "../../const";
 
 const BlogIndex = (props) => {
   let [data, setData] = useState([]);
@@ -10,7 +11,7 @@ const BlogIndex = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const URL = "https://api-myblog.herokuapp.com/posts/";
+      const URL = `${BASE_URL/posts}`;
       const response = await fetch(URL);
       const data = await response.json();
       setData(data.posts);
