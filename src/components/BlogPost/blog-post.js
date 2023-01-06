@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import ReactHtmlParser from "react-html-parser";
-
+import { BASE_URL } from "../../const";
 import BlogLayout from "../BlogLayout";
 import CommentIndex from "../CommentIndex";
 import Loader from "../Loader";
@@ -16,7 +16,7 @@ const BlogPost = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const URL = `https://api-myblog.herokuapp.com/posts/${props.postId}`;
+      const URL = `${BASE_URL}/posts/${props.postId}`;
       const response = await fetch(URL);
       const data = await response.json();
       setPost(data.post);

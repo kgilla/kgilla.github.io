@@ -11,7 +11,7 @@ const BlogIndex = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const URL = `${BASE_URL/posts}`;
+      const URL = `${BASE_URL}/posts`;
       const response = await fetch(URL);
       const data = await response.json();
       setData(data.posts);

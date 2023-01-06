@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BASE_URL } from "../../const";
 import "./contact.css";
 
 function Contact() {
@@ -12,7 +13,7 @@ function Contact() {
 
   const fetchData = async (contact) => {
     try {
-      const URL = `https://api-myblog.herokuapp.com/contacts/create`;
+      const URL = `${BASE_URL}/contacts/create`;
       const response = await fetch(URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

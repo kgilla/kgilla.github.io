@@ -4,13 +4,14 @@ import "./navbar.css";
 import { Menu, Close } from "@styled-icons/material-outlined";
 
 function Navbar(props) {
-  let [expandedMenu, setExpandedMenu] = useState("closed");
+  let [isOpen, setIsOpen] = useState(false);
+  
+  const containerClasses = {
+    open: "expanded-nav open-nav",
+    wide: "nav-right-links",
+  }
 
-  const handleClick = () => {
-    expandedMenu === "closed"
-      ? setExpandedMenu("open")
-      : setExpandedMenu("closed");
-  };
+  const handleClick = () => { setIsOpen(!isOpen)};
 
   return (
     <div className="nav-container">
@@ -21,40 +22,32 @@ function Navbar(props) {
           </Link>{" "}
         </div>
         {props.width > 1024 ? (
-          <div className="nav-right-links">
-            <Link className="nav-link" to="projects">
-              Projects
-            </Link>
-
-            <Link className="nav-link" to="blog">
-              Blog
-            </Link>
-            <Link className="nav-link" to="contact">
-              Contact
-            </Link>
-          </div>
-        ) : expandedMenu === "closed" ? (
-          <Menu className="menu-hamburger" onClick={handleClick} />
-        ) : (
+          <NavLinks containerClass={containerClasses.wide} onClick={handleClick}/>
+        ) : isOpen ? (
           <Close className="menu-hamburger spinulator" onClick={handleClick} />
+        ) : (
+          <Menu className="menu-hamburger" onClick={handleClick} />
         )}
       </nav>
-      {expandedMenu === "open" ? (
-        <nav className="expanded-nav open-nav">
-          <Link className="nav-link" to="projects" onClick={handleClick}>
-            Projects
-          </Link>
-
-          <Link className="nav-link" to="blog" onClick={handleClick}>
-            Blog
-          </Link>
-          <Link className="nav-link" to="contact" onClick={handleClick}>
-            Contact
-          </Link>
-        </nav>
-      ) : null}
+      {isOpen ? <NavLinks handleClick={handleClick} containerClass={containerClasses.open}/> : null}
     </div>
   );
+}
+
+const NavLinks = ({handleClick, containerClass}) => {
+  return (
+    <ul className={containerClass}>    
+      <Link className="nav-link" to="projects" onClick={handleClick}>
+        Projects
+      </Link>
+      <Link className="nav-link" to="blog" onClick={handleClick}>
+        Blog
+      </Link>
+      <Link className="nav-link" to="contact" onClick={handleClick}>
+        Contact
+      </Link>
+    </ul>
+  )
 }
 
 export default Navbar;
